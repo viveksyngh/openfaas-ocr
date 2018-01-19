@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://dev-cstrb-db01.kendall.corp.akamai.com:8080
+
+functions:
+  openfaas-ocr:
+    lang: Dockerfile
+    handler: ./openfaas-ocr
+    image: viveksyngh/openfaas-ocr
