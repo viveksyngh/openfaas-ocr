@@ -23,6 +23,8 @@ def save_image_local(url):
     return local_file_path
 
 def handle(url):
+    if not len(url):
+        raise Exception("Missing URL parameter")
     if get_ext(url) not in ALLOWED_IMAGE_TYPE:
         raise Exception("Invalid Image file type")
     file_path = save_image_local(url)
