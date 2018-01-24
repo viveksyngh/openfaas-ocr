@@ -13,6 +13,12 @@ Deploy:
 ```bash
 $ faas-cli deploy -f ./openfass-ocr.yml --gateway=http://<GATEWAY-IP> 
 ```
+OR
+
+```bash
+$ faas-cli deploy --image=viveksyngh/openfaas-ocr --name=function_ocr --gateway=http://<GATEWAY-IP>
+```
+
 
 Invoke: 
 ```bash
