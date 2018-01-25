@@ -11,12 +11,18 @@ In 2006 Tesseract was considered one of the most accurate open-source OCR engine
 Deploy:
 
 ```bash
-$ faas-cli deploy -f ./openfass-ocr.yml --gateway=http://<GATEWAY-IP> 
+$ faas-cli deploy -f ./openfaas-ocr.yml --gateway=http://<GATEWAY-IP> 
 ```
+OR
+
+```bash
+$ faas-cli deploy --image=viveksyngh/openfaas-ocr --name=openfaas-ocr --gateway=http://<GATEWAY-IP>
+```
+
 
 Invoke: 
 ```bash
-$ echo -n 'https://www.pyimagesearch.com/wp-content/uploads/2017/06/tesseract_header.jpg' | faas-cli invoke luhn --gateway=<GATEWAY-IP>
+$ echo -n 'https://www.pyimagesearch.com/wp-content/uploads/2017/06/tesseract_header.jpg' | faas-cli invoke openfaas-ocr --gateway=<GATEWAY-IP>
 ```
 
 Output:
