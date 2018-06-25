@@ -12,7 +12,8 @@ ENV TESSDATA_PREFIX /usr/share/tessdata
 
 RUN set -x && apk add  --update --no-cache --virtual wget-dependencies \
     ca-certificates \
-    openssl 
+    openssl
+
 RUN apk add build-base python-dev py-pip  jpeg-dev zlib-dev
 ENV LIBRARY_PATH=/lib:/usr/lib
 
