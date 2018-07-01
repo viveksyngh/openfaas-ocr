@@ -6,4 +6,4 @@ functions:
   openfaas-ocr:
     lang: Dockerfile
     handler: ./openfaas-ocr
-    image: viveksyngh/openfaas-ocr:latest-dev
+    image: viveksyngh/openfaas-ocr:0.2.0
