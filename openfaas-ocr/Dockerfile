@@ -14,7 +14,7 @@ RUN set -x && apk add  --update --no-cache --virtual wget-dependencies \
     ca-certificates \
     openssl
 
-RUN apk add build-base python-dev py-pip  jpeg-dev zlib-dev
+RUN apk add build-base python3-dev py-pip  jpeg-dev zlib-dev
 ENV LIBRARY_PATH=/lib:/usr/lib
 
 RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories
