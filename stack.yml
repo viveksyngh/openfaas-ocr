@@ -4,6 +4,6 @@ provider:
 
 functions:
   openfaas-ocr:
-    lang: Dockerfile
+    lang: dockerfile
     handler: ./openfaas-ocr
     image: viveksyngh/openfaas-ocr:0.3.0
